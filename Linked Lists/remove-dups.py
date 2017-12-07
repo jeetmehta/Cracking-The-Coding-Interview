@@ -44,6 +44,7 @@ class LinkedList:
 			print
 
 	# Removes all duplicates using a hash set (keeps only one unique instance)
+	# O(n) time, O(n) space
 	def removeDuplicates(self):
 		if (self.head != None):
 			
