@@ -1,6 +1,6 @@
 # CTCI - Chapter 2: Linked Lists #
 # Question 2.2
-# PROBLEM STATEMENT: Implement an algorithm to find the kth to last element of a singly linked list.
+# PROBLEM STATEMENT: Implement an algorithm to find the kth to last element of a singly linked list (assuming you don't know the size of the list).
 # HINTS: #8, #25, #41, #67, #126
 
 class Node:
@@ -36,6 +36,8 @@ class LinkedList:
 				temp = temp.next
 			print
 
+	# Returns the kth to last element, having known the size of the list
+	# O(n) time, O(1) space
 	def getKthToLast(self, k):
 
 		# Edge Case 1: K is too large (can't be greater than size)
@@ -55,9 +57,6 @@ class LinkedList:
 			count += 1
 
 		return temp
-
-
-
 
 # Main function - runs unit tests
 def main():
