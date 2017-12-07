@@ -4,7 +4,12 @@
 # HINTS: #1, #84, #122, #131
 
 # Checks if two strings are permutations of each other using hash maps
+# O(n) time, O(n) space
 def checkPermutations(firstString, secondString):
+
+	# Edge Case 1: No way two strings can be permutations of each other if they're different lengths
+	if (len(firstString) != len(secondString)):
+		return False
 
 	firstHashMap = {}
 	secondHashMap = {}

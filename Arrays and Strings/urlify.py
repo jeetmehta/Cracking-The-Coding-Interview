@@ -6,6 +6,7 @@
 # HINTS: #53, #118
 
 # Replaces spaces in a string with %20
+# O(n) time, O(1) space
 def urlify(inputString):
 	return inputString.replace(" ", "%20")
 

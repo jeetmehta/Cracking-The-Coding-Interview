@@ -3,7 +3,8 @@
 # PROBLEM STATEMENT: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
 # HINTS: #44, #117, #132
 
-# Checks if a string has all unique characters using a set (don't need a count, just needs to check if it exists): O(n) where n = size of string
+# Checks if a string has all unique characters using a set (don't need a count, just needs to check if it exists)
+# O(n) time O(n) space
 def allUniqueCharactersUsingHash(inputString):
 	
 	# Edge Case 1: Empty String
@@ -23,7 +24,8 @@ def allUniqueCharactersUsingHash(inputString):
 	# All characters are unique
 	return True
 
-# Checks if a string has all unique characters iteratively, cross-checking every character against every other character: O(n^2) where n = size of string
+# Checks if a string has all unique characters iteratively, cross-checking every character against every other character
+# O(n^2) time, O(1) space
 def allUniqueCharactersNoDS(inputString):
 
 	# Edge Case 1: Empty String
